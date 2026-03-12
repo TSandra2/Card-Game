@@ -1,0 +1,630 @@
+Apache Ant(TM) version 1.10.15 compiled on September 8 2024
+Trying the default build file: build.xml
+Buildfile: /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build.xml
+Adding reference: ant.PropertyHelper
+Detected Java version: 24 in: /usr/lib/jvm/java-24-openjdk
+Detected OS: Linux
+Adding reference: ant.ComponentHelper
+Setting ro project property: ant.file -> /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build.xml
+Setting ro project property: ant.file.type -> file
+Setting ro project property: ant.project.invoked-targets -> test
+Adding reference: ant.projectHelper
+Adding reference: ant.parsing.context
+Adding reference: ant.targets
+parsing buildfile /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build.xml with URI = file:/run/media/asim/Muhammad%20Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build.xml
+Setting ro project property: ant.project.name -> Blackjack
+Adding reference: Blackjack
+Setting ro project property: ant.project.default-target -> compile
+Setting ro project property: ant.file.Blackjack -> /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build.xml
+Setting ro project property: ant.file.type.Blackjack -> file
+Project base dir set to: /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison
+ +Target: 
+ +Target: init
+ +Target: compile
+ +Target: jar
+ +Target: jar-cartes
+ +Target: runConsole
+ +Target: runGUI
+ +Target: test-compile
+ +Target: test
+ +Target: doc
+ +Target: dist
+ +Target: clean
+ +Target: help
+Adding reference: ant.LocalProperties
+parsing buildfile jar:file:/usr/share/ant/lib/ant.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/usr/share/ant/lib/ant.jar!/org/apache/tools/ant/antlib.xml from a zip file
+Setting project property: src.dir -> /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src
+Setting project property: build.dir -> /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build
+Setting project property: dist.dir -> /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/dist
+Setting project property: docs.dir -> /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/docs
+Setting project property: lib.dir -> /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib
+Setting project property: test.dir -> /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/test
+Setting project property: main.console.class -> main.MainConsole
+Setting project property: main.gui.class -> main.Main
+Setting project property: jar.main.name -> blackjack-game.jar
+Setting project property: jar.cartes.name -> librairie-cartes.jar
+Setting ro project property: ant.project.invoked-targets -> test
+Attempting to create object of type org.apache.tools.ant.helper.DefaultExecutor
+Adding reference: ant.executor
+Build sequence for target(s) `test' is [init, compile, test-compile, test]
+Complete build sequence is [init, compile, test-compile, test, jar, help, clean, jar-cartes, doc, dist, runConsole, runGUI, ]
+
+init:
+    [mkdir] Skipping /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build because it already exists.
+    [mkdir] Skipping /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/dist because it already exists.
+    [mkdir] Skipping /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib because it already exists.
+
+compile:
+     [echo]  Compilation de tous les fichiers source...
+fileset: Setup scanner in dir /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src with patternSet{ includes: [] excludes: [] }
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_as.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_cinq.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_dame.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_deux.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_dix.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_huit.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_neuf.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_quatre.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_roi.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_sept.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_six.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_trois.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/carreau_valet.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_as.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_cinq.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_dame.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_deux.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_dix.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_huit.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_neuf.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_quatre.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_roi.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_sept.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_six.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_trois.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/coeur_valet.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/dos_de_carte.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_as.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_cinq.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_dame.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_deux.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_dix.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_huit.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_neuf.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_quatre.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_roi.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_sept.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_six.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_trois.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/pique_valet.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_as.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_cinq.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_dame.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_deux.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_dix.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_huit.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_neuf.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_quatre.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_roi.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_sept.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_six.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_trois.png skipped - don't know how to handle it
+    [javac] /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/src/assets/images/trefle_valet.png skipped - don't know how to handle it
+    [javac] blackjack/controleur/ControleurBlackJack.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/controleur/ControleurBlackJack.class is up to date.
+    [javac] blackjack/modele/Action.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/Action.class is up to date.
+    [javac] blackjack/modele/Croupier.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/Croupier.class is up to date.
+    [javac] blackjack/modele/EcouteurActionJeu.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/EcouteurActionJeu.class is up to date.
+    [javac] blackjack/modele/EtatPartie.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/EtatPartie.class is up to date.
+    [javac] blackjack/modele/Humain.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/Humain.class is up to date.
+    [javac] blackjack/modele/IA.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/IA.class is up to date.
+    [javac] blackjack/modele/Joueur.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/Joueur.class is up to date.
+    [javac] blackjack/modele/MainJoueur.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/MainJoueur.class is up to date.
+    [javac] blackjack/modele/PartieBlackjack.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/PartieBlackjack.class is up to date.
+    [javac] blackjack/modele/PhaseJeu.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/PhaseJeu.class is up to date.
+    [javac] blackjack/modele/Strategie.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/Strategie.class is up to date.
+    [javac] blackjack/modele/StrategieBasic.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/StrategieBasic.class is up to date.
+    [javac] blackjack/modele/StrategieIA.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/modele/StrategieIA.class is up to date.
+    [javac] blackjack/observer/AbstractModelEcoutable.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/observer/AbstractModelEcoutable.class is up to date.
+    [javac] blackjack/observer/Ecoutable.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/observer/Ecoutable.class is up to date.
+    [javac] blackjack/observer/Ecouteur.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/observer/Ecouteur.class is up to date.
+    [javac] blackjack/vue/VueConsole.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/vue/VueConsole.class is up to date.
+    [javac] blackjack/vue/VueGUI.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/vue/VueGUI.class is up to date.
+    [javac] blackjack/vue/VueJeu.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/blackjack/vue/VueJeu.class is up to date.
+    [javac] cartes/Carte.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/Carte.class is up to date.
+    [javac] cartes/CarteStandard.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/CarteStandard.class is up to date.
+    [javac] cartes/Couleur.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/Couleur.class is up to date.
+    [javac] cartes/FabriqueJeu.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/FabriqueJeu.class is up to date.
+    [javac] cartes/FabriqueJeuStandard.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/FabriqueJeuStandard.class is up to date.
+    [javac] cartes/Paquet.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/Paquet.class is up to date.
+    [javac] cartes/PaquetStandard.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/PaquetStandard.class is up to date.
+    [javac] cartes/Valeur.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/Valeur.class is up to date.
+    [javac] cartes/vue/TestConsole.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/vue/TestConsole.class is up to date.
+    [javac] cartes/vue/VueCarte.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/vue/VueCarte.class is up to date.
+    [javac] cartes/vue/VueCarteConsole.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/vue/VueCarteConsole.class is up to date.
+    [javac] cartes/vue/VueCarteGUI.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/vue/VueCarteGUI.class is up to date.
+    [javac] cartes/vue/VuePaquetConsole.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/cartes/vue/VuePaquetConsole.class is up to date.
+    [javac] main/Main.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/main/Main.class is up to date.
+    [javac] main/MainConsole.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/main/MainConsole.class is up to date.
+     [echo]  Compilation réussie !
+
+test-compile:
+     [echo]  Compilation des tests...
+    [mkdir] Skipping /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/test-classes because it already exists.
+fileset: Setup scanner in dir /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/test with patternSet{ includes: [] excludes: [] }
+    [javac] blackjack/modele/EtatPartieTest.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/test-classes/blackjack/modele/EtatPartieTest.class is up to date.
+    [javac] blackjack/modele/StrategieBasicTest.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/test-classes/blackjack/modele/StrategieBasicTest.class is up to date.
+    [javac] blackjack/modele/StrategieIATest.java omitted as /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/test-classes/blackjack/modele/StrategieIATest.class is up to date.
+     [echo]  Tests compilés !
+
+test:
+     [echo]  Exécution des tests...
+    [junit] Couldn't find junit/framework/TestCase.class
+    [junit] Found /usr/share/java/ant/ant-launcher.jar
+    [junit] Found /usr/share/ant/lib/ant.jar
+    [junit] Found /usr/share/ant/lib/ant-junit.jar
+    [junit] Found /usr/share/ant/lib/ant-junit4.jar
+fileset: Setup scanner in dir /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib with patternSet{ includes: [**/*.jar] excludes: [] }
+Finding class junit.framework.Test
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/Test.class
+Class java.lang.Object loaded from parent loader (parentFirst)
+Class junit.framework.Test loaded from ant loader (parentFirst)
+Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirrorImpl
+Loaded from /usr/share/ant/lib/ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitTaskMirrorImpl.class
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror loaded from parent loader (parentFirst)
+Class java.lang.ClassLoader loaded from parent loader (parentFirst)
+Class org.apache.tools.ant.AntClassLoader loaded from parent loader (parentFirst)
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$JUnitTestRunnerMirror loaded from parent loader (parentFirst)
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$SummaryJUnitResultFormatterMirror loaded from parent loader (parentFirst)
+Class java.lang.Throwable loaded from parent loader (parentFirst)
+Finding class junit.framework.AssertionFailedError
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/AssertionFailedError.class
+Class java.lang.AssertionError loaded from parent loader (parentFirst)
+Class junit.framework.AssertionFailedError loaded from ant loader (parentFirst)
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTask loaded from parent loader (parentFirst)
+fileset: Setup scanner in dir /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/test with patternSet{ includes: [**/*Test.java] excludes: [] }
+    [junit] Using System properties {ant.library.dir=/usr/share/ant/lib, java.specification.version=24, sun.jnu.encoding=UTF-8, sun.arch.data.model=64, java.vendor.url=https://openjdk.org/, sun.boot.library.path=/usr/lib/jvm/java-24-openjdk/lib, sun.java.command=org.apache.tools.ant.launch.Launcher -cp  -d test, jdk.debug=release, java.specification.vendor=Oracle Corporation, java.version.date=2025-03-18, java.home=/usr/lib/jvm/java-24-openjdk, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+    [junit] , java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=24.0.1, user.name=asim, file.encoding=UTF-8, java.io.tmpdir=/tmp, java.version=24.0.1, java.vm.specification.name=Java Virtual Machine Specification, ant.home=/usr/share/ant, native.encoding=UTF-8, java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, stderr.encoding=UTF-8, java.vendor=Arch Linux, sun.io.unicode.encoding=UnicodeLittle, java.class.path=/usr/share/ant/lib/ant-launcher.jar:/usr/share/java/junit.jar:/usr/share/java/hamcrest-core.jar:/usr/share/ant/lib/ant-apache-bcel.jar:/usr/share/ant/lib/ant-apache-oro.jar:/usr/share/ant/lib/ant-jakartamail.jar:/usr/share/ant/lib/ant-antlr.jar:/usr/share/ant/lib/ant-launcher.jar:/usr/share/ant/lib/ant-xz.jar:/usr/share/ant/lib/ant-javamail.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-jmf.jar:/usr/share/ant/lib/ant-jsch.jar:/usr/share/ant/lib/ant-junit4.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-apache-regexp.jar:/usr/share/ant/lib/ant-swing.jar:/usr/share/ant/lib/ant-apache-xalan2.jar:/usr/share/ant/lib/ant-imageio.jar:/usr/share/ant/lib/ant-jdepend.jar:/usr/share/ant/lib/ant-netrexx.jar:/usr/share/ant/lib/ant-testutil.jar:/usr/share/ant/lib/ant-jai.jar:/usr/share/ant/lib/ant-commons-net.jar:/usr/share/ant/lib/ant-junitlauncher.jar:/usr/share/ant/lib/ant-commons-logging.jar:/usr/share/ant/lib/ant-apache-bsf.jar:/usr/share/ant/lib/ant-apache-log4j.jar:/usr/share/ant/lib/ant-apache-resolver.jar, java.vm.vendor=Arch Linux, user.timezone=Europe/Paris, os.name=Linux, java.vm.specification.version=24, sun.java.launcher=SUN_STANDARD, user.country=US, sun.cpu.endian=little, user.home=/home/asim, user.language=en, stdout.encoding=UTF-8, path.separator=:, os.version=6.10.13-3-MANJARO, java.runtime.name=OpenJDK Runtime Environment, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.url.bug=https://bugreport.java.com/bugreport/, user.dir=/run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison, os.arch=amd64, java.vm.info=mixed mode, sharing, java.vm.version=24.0.1, java.class.version=68.0}
+Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner
+Loaded from /usr/share/ant/lib/ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitTestRunner.class
+Finding class junit.framework.TestListener
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/TestListener.class
+Class junit.framework.TestListener loaded from ant loader (parentFirst)
+Class java.lang.IllegalArgumentException loaded from parent loader (parentFirst)
+Class org.apache.tools.ant.BuildException loaded from parent loader (parentFirst)
+Class java.io.IOException loaded from parent loader (parentFirst)
+Class java.util.Map loaded from parent loader (parentFirst)
+Class java.io.Reader loaded from parent loader (parentFirst)
+Class java.io.FileReader loaded from parent loader (parentFirst)
+Class java.util.Hashtable loaded from parent loader (parentFirst)
+Class java.util.Properties loaded from parent loader (parentFirst)
+Class java.lang.NoSuchMethodException loaded from parent loader (parentFirst)
+Class java.lang.ClassNotFoundException loaded from parent loader (parentFirst)
+Class java.lang.OutOfMemoryError loaded from parent loader (parentFirst)
+Finding class junit.framework.TestResult
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/TestResult.class
+Class junit.framework.TestResult loaded from ant loader (parentFirst)
+Finding class org.apache.tools.ant.taskdefs.optional.junit.IgnoredTestResult
+Loaded from /usr/share/ant/lib/ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/IgnoredTestResult.class
+Class java.io.OutputStream loaded from parent loader (parentFirst)
+Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner$1
+Loaded from /usr/share/ant/lib/ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitTestRunner$1.class
+Class java.io.PrintStream loaded from parent loader (parentFirst)
+Class org.apache.tools.ant.util.TeeOutputStream loaded from parent loader (parentFirst)
+Finding class org.apache.tools.ant.taskdefs.optional.junit.TestListenerWrapper
+Loaded from /usr/share/ant/lib/ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/TestListenerWrapper.class
+Finding class org.apache.tools.ant.taskdefs.optional.junit.IgnoredTestListener
+Loaded from /usr/share/ant/lib/ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/IgnoredTestListener.class
+Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner$3
+Loaded from /usr/share/ant/lib/ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitTestRunner$3.class
+Class java.io.ByteArrayOutputStream loaded from parent loader (parentFirst)
+Class java.lang.Exception loaded from parent loader (parentFirst)
+Class java.io.Writer loaded from parent loader (parentFirst)
+Class java.io.StringWriter loaded from parent loader (parentFirst)
+Class java.io.StringReader loaded from parent loader (parentFirst)
+Class java.io.BufferedWriter loaded from parent loader (parentFirst)
+Class java.lang.CharSequence loaded from parent loader (parentFirst)
+Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitResultFormatter
+Loaded from /usr/share/ant/lib/ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitResultFormatter.class
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$JUnitResultFormatterMirror loaded from parent loader (parentFirst)
+Class java.lang.String loaded from parent loader (parentFirst)
+Class java.util.Vector loaded from parent loader (parentFirst)
+Finding class org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter
+Loaded from /usr/share/ant/lib/ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/SummaryJUnitResultFormatter.class
+Class java.text.NumberFormat loaded from parent loader (parentFirst)
+Class java.util.List loaded from parent loader (parentFirst)
+Class java.util.Collection loaded from parent loader (parentFirst)
+Class java.lang.ThreadDeath loaded from parent loader (parentFirst)
+Finding class junit.framework.Protectable
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/Protectable.class
+Class junit.framework.Protectable loaded from ant loader (parentFirst)
+Class java.util.ArrayList loaded from parent loader (parentFirst)
+Class java.util.Iterator loaded from parent loader (parentFirst)
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTest loaded from parent loader (parentFirst)
+Class java.lang.Class loaded from parent loader (parentFirst)
+Finding class blackjack.modele.EtatPartieTest
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build/test-classes blackjack/modele/EtatPartieTest.class
+Class blackjack.modele.EtatPartieTest loaded from ant loader (parentFirst)
+Finding class blackjack.modele.Joueur
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build blackjack/modele/Joueur.class
+Class blackjack.modele.Joueur loaded from ant loader (parentFirst)
+Finding class blackjack.modele.Humain
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/build blackjack/modele/Humain.class
+Class blackjack.modele.Humain loaded from ant loader (parentFirst)
+Finding class junit.framework.TestCase
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/TestCase.class
+Finding class junit.framework.Assert
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/Assert.class
+Class junit.framework.Assert loaded from ant loader (parentFirst)
+Class junit.framework.TestCase loaded from ant loader (parentFirst)
+Class java.lang.annotation.Annotation loaded from parent loader (parentFirst)
+Finding class org.apache.tools.ant.taskdefs.optional.junit.CustomJUnit4TestAdapterCache
+Loaded from /usr/share/ant/lib/ant-junit4.jar org/apache/tools/ant/taskdefs/optional/junit/CustomJUnit4TestAdapterCache.class
+Finding class junit.framework.JUnit4TestAdapterCache
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/JUnit4TestAdapterCache.class
+Class java.util.HashMap loaded from parent loader (parentFirst)
+Class junit.framework.JUnit4TestAdapterCache loaded from ant loader (parentFirst)
+Finding class org.junit.runner.notification.RunListener
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/notification/RunListener.class
+Class org.junit.runner.notification.RunListener loaded from ant loader (parentFirst)
+Finding class junit.framework.JUnit4TestAdapterCache$1
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/JUnit4TestAdapterCache$1.class
+Class junit.framework.JUnit4TestAdapterCache$1 loaded from ant loader (parentFirst)
+Finding class org.apache.tools.ant.taskdefs.optional.junit.CustomJUnit4TestAdapterCache$1
+Loaded from /usr/share/ant/lib/ant-junit4.jar org/apache/tools/ant/taskdefs/optional/junit/CustomJUnit4TestAdapterCache$1.class
+Finding class junit.framework.JUnit4TestAdapter
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/JUnit4TestAdapter.class
+Finding class org.junit.runner.manipulation.Filterable
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/manipulation/Filterable.class
+Class org.junit.runner.manipulation.Filterable loaded from ant loader (parentFirst)
+Finding class org.junit.runner.manipulation.Orderable
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/manipulation/Orderable.class
+Finding class org.junit.runner.manipulation.Sortable
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/manipulation/Sortable.class
+Class org.junit.runner.manipulation.Sortable loaded from ant loader (parentFirst)
+Class org.junit.runner.manipulation.Orderable loaded from ant loader (parentFirst)
+Finding class org.junit.runner.Describable
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/Describable.class
+Class org.junit.runner.Describable loaded from ant loader (parentFirst)
+Class junit.framework.JUnit4TestAdapter loaded from ant loader (parentFirst)
+Finding class org.junit.runner.notification.RunNotifier
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/notification/RunNotifier.class
+Class org.junit.runner.notification.RunNotifier loaded from ant loader (parentFirst)
+Class java.lang.reflect.Method loaded from parent loader (parentFirst)
+Class java.lang.reflect.Constructor loaded from parent loader (parentFirst)
+Finding class org.junit.runner.Request
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/Request.class
+Class org.junit.runner.Request loaded from ant loader (parentFirst)
+Finding class org.junit.internal.requests.ClassRequest
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/requests/ClassRequest.class
+Finding class org.junit.internal.requests.MemoizingRequest
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/requests/MemoizingRequest.class
+Class org.junit.internal.requests.MemoizingRequest loaded from ant loader (parentFirst)
+Class org.junit.internal.requests.ClassRequest loaded from ant loader (parentFirst)
+Finding class org.junit.internal.requests.OrderingRequest
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/requests/OrderingRequest.class
+Class org.junit.internal.requests.OrderingRequest loaded from ant loader (parentFirst)
+Finding class org.junit.internal.requests.SortingRequest
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/requests/SortingRequest.class
+Class org.junit.internal.requests.SortingRequest loaded from ant loader (parentFirst)
+Finding class org.junit.runner.Runner
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/Runner.class
+Class org.junit.runner.Runner loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.ErrorReportingRunner
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/ErrorReportingRunner.class
+Class org.junit.internal.runners.ErrorReportingRunner loaded from ant loader (parentFirst)
+Finding class org.junit.internal.requests.FilterRequest
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/requests/FilterRequest.class
+Class org.junit.internal.requests.FilterRequest loaded from ant loader (parentFirst)
+Finding class org.junit.runner.Request$1
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/Request$1.class
+Class org.junit.runner.Request$1 loaded from ant loader (parentFirst)
+Finding class org.junit.runners.model.InitializationError
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/InitializationError.class
+Class org.junit.runners.model.InitializationError loaded from ant loader (parentFirst)
+Finding class org.junit.runners.model.RunnerBuilder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/RunnerBuilder.class
+Class org.junit.runners.model.RunnerBuilder loaded from ant loader (parentFirst)
+Finding class org.junit.internal.builders.AllDefaultPossibilitiesBuilder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/builders/AllDefaultPossibilitiesBuilder.class
+Class org.junit.internal.builders.AllDefaultPossibilitiesBuilder loaded from ant loader (parentFirst)
+Class java.util.concurrent.locks.Lock loaded from parent loader (parentFirst)
+Class java.util.concurrent.locks.ReentrantLock loaded from parent loader (parentFirst)
+Finding class org.junit.internal.requests.ClassRequest$CustomAllDefaultPossibilitiesBuilder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/requests/ClassRequest$CustomAllDefaultPossibilitiesBuilder.class
+Class org.junit.internal.requests.ClassRequest$CustomAllDefaultPossibilitiesBuilder loaded from ant loader (parentFirst)
+Class java.util.Set loaded from parent loader (parentFirst)
+Finding class org.junit.internal.builders.SuiteMethodBuilder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/builders/SuiteMethodBuilder.class
+Class org.junit.internal.builders.SuiteMethodBuilder loaded from ant loader (parentFirst)
+Finding class org.junit.internal.builders.NullBuilder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/builders/NullBuilder.class
+Class org.junit.internal.builders.NullBuilder loaded from ant loader (parentFirst)
+Finding class org.junit.internal.requests.ClassRequest$CustomSuiteMethodBuilder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/requests/ClassRequest$CustomSuiteMethodBuilder.class
+Class org.junit.internal.requests.ClassRequest$CustomSuiteMethodBuilder loaded from ant loader (parentFirst)
+Class java.util.HashSet loaded from parent loader (parentFirst)
+Finding class org.junit.internal.builders.IgnoredBuilder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/builders/IgnoredBuilder.class
+Class org.junit.internal.builders.IgnoredBuilder loaded from ant loader (parentFirst)
+Finding class org.junit.internal.builders.IgnoredClassRunner
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/builders/IgnoredClassRunner.class
+Class org.junit.internal.builders.IgnoredClassRunner loaded from ant loader (parentFirst)
+Finding class org.junit.internal.builders.AnnotatedBuilder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/builders/AnnotatedBuilder.class
+Class org.junit.internal.builders.AnnotatedBuilder loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.SuiteMethod
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/SuiteMethod.class
+Finding class org.junit.internal.runners.JUnit38ClassRunner
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/JUnit38ClassRunner.class
+Class org.junit.internal.runners.JUnit38ClassRunner loaded from ant loader (parentFirst)
+Class org.junit.internal.runners.SuiteMethod loaded from ant loader (parentFirst)
+Finding class org.junit.internal.builders.JUnit3Builder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/builders/JUnit3Builder.class
+Class org.junit.internal.builders.JUnit3Builder loaded from ant loader (parentFirst)
+Finding class org.junit.internal.builders.JUnit4Builder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/builders/JUnit4Builder.class
+Class org.junit.internal.builders.JUnit4Builder loaded from ant loader (parentFirst)
+Finding class org.junit.runners.JUnit4
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/JUnit4.class
+Finding class org.junit.runners.BlockJUnit4ClassRunner
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/BlockJUnit4ClassRunner.class
+Finding class org.junit.runners.ParentRunner
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/ParentRunner.class
+Class org.junit.runners.ParentRunner loaded from ant loader (parentFirst)
+Class org.junit.runners.BlockJUnit4ClassRunner loaded from ant loader (parentFirst)
+Class org.junit.runners.JUnit4 loaded from ant loader (parentFirst)
+Class java.util.Arrays loaded from parent loader (parentFirst)
+Finding class org.junit.Ignore
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/Ignore.class
+Class org.junit.Ignore loaded from ant loader (parentFirst)
+Finding class org.junit.runner.RunWith
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/RunWith.class
+Class org.junit.runner.RunWith loaded from ant loader (parentFirst)
+Class java.lang.Runnable loaded from parent loader (parentFirst)
+Finding class org.junit.runners.model.Statement
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/Statement.class
+Class org.junit.runners.model.Statement loaded from ant loader (parentFirst)
+Finding class org.junit.runners.ParentRunner$2
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/ParentRunner$2.class
+Class org.junit.runners.ParentRunner$2 loaded from ant loader (parentFirst)
+Finding class org.junit.runners.model.MemberValueConsumer
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/MemberValueConsumer.class
+Class org.junit.runners.model.MemberValueConsumer loaded from ant loader (parentFirst)
+Class java.lang.Iterable loaded from parent loader (parentFirst)
+Finding class org.junit.rules.RunRules
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/rules/RunRules.class
+Class org.junit.rules.RunRules loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.statements.RunAfters
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/statements/RunAfters.class
+Class org.junit.internal.runners.statements.RunAfters loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.statements.RunBefores
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/statements/RunBefores.class
+Class org.junit.internal.runners.statements.RunBefores loaded from ant loader (parentFirst)
+Finding class org.junit.runners.ParentRunner$3
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/ParentRunner$3.class
+Class org.junit.runners.ParentRunner$3 loaded from ant loader (parentFirst)
+Finding class org.junit.internal.AssumptionViolatedException
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/AssumptionViolatedException.class
+Finding class org.hamcrest.SelfDescribing
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/hamcrest-core-1.3.jar org/hamcrest/SelfDescribing.class
+Class org.hamcrest.SelfDescribing loaded from ant loader (parentFirst)
+Class java.lang.RuntimeException loaded from parent loader (parentFirst)
+Class org.junit.internal.AssumptionViolatedException loaded from ant loader (parentFirst)
+Class java.util.Comparator loaded from parent loader (parentFirst)
+Finding class org.junit.runner.manipulation.NoTestsRemainException
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/manipulation/NoTestsRemainException.class
+Class org.junit.runner.manipulation.NoTestsRemainException loaded from ant loader (parentFirst)
+Finding class org.junit.runners.model.InvalidTestClassError
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/InvalidTestClassError.class
+Class org.junit.runners.model.InvalidTestClassError loaded from ant loader (parentFirst)
+Finding class org.junit.runner.notification.StoppedByUserException
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/notification/StoppedByUserException.class
+Class org.junit.runner.notification.StoppedByUserException loaded from ant loader (parentFirst)
+Finding class org.junit.runners.model.RunnerScheduler
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/RunnerScheduler.class
+Class org.junit.runners.model.RunnerScheduler loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.statements.FailOnTimeout
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/statements/FailOnTimeout.class
+Class org.junit.internal.runners.statements.FailOnTimeout loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.statements.ExpectException
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/statements/ExpectException.class
+Class org.junit.internal.runners.statements.ExpectException loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.statements.InvokeMethod
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/statements/InvokeMethod.class
+Class org.junit.internal.runners.statements.InvokeMethod loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.statements.Fail
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/statements/Fail.class
+Class org.junit.internal.runners.statements.Fail loaded from ant loader (parentFirst)
+Finding class org.junit.runners.BlockJUnit4ClassRunner$1
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/BlockJUnit4ClassRunner$1.class
+Class org.junit.runners.BlockJUnit4ClassRunner$1 loaded from ant loader (parentFirst)
+Finding class org.junit.validator.TestClassValidator
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/validator/TestClassValidator.class
+Class org.junit.validator.TestClassValidator loaded from ant loader (parentFirst)
+Class java.util.concurrent.ConcurrentMap loaded from parent loader (parentFirst)
+Finding class org.junit.validator.AnnotationsValidator
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/validator/AnnotationsValidator.class
+Class org.junit.validator.AnnotationsValidator loaded from ant loader (parentFirst)
+Finding class org.junit.validator.AnnotationsValidator$AnnotatableValidator
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/validator/AnnotationsValidator$AnnotatableValidator.class
+Class org.junit.validator.AnnotationsValidator$AnnotatableValidator loaded from ant loader (parentFirst)
+Finding class org.junit.validator.AnnotationsValidator$ClassValidator
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/validator/AnnotationsValidator$ClassValidator.class
+Class org.junit.validator.AnnotationsValidator$ClassValidator loaded from ant loader (parentFirst)
+Finding class org.junit.validator.AnnotationValidatorFactory
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/validator/AnnotationValidatorFactory.class
+Class org.junit.validator.AnnotationValidatorFactory loaded from ant loader (parentFirst)
+Class java.util.concurrent.ConcurrentHashMap loaded from parent loader (parentFirst)
+Finding class org.junit.validator.AnnotationsValidator$MethodValidator
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/validator/AnnotationsValidator$MethodValidator.class
+Class org.junit.validator.AnnotationsValidator$MethodValidator loaded from ant loader (parentFirst)
+Finding class org.junit.validator.AnnotationsValidator$FieldValidator
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/validator/AnnotationsValidator$FieldValidator.class
+Class org.junit.validator.AnnotationsValidator$FieldValidator loaded from ant loader (parentFirst)
+Class java.util.Collections loaded from parent loader (parentFirst)
+Finding class org.junit.validator.PublicClassValidator
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/validator/PublicClassValidator.class
+Class org.junit.validator.PublicClassValidator loaded from ant loader (parentFirst)
+Class java.lang.ThreadLocal loaded from parent loader (parentFirst)
+Finding class org.junit.runners.model.TestClass
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/TestClass.class
+Finding class org.junit.runners.model.Annotatable
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/Annotatable.class
+Class org.junit.runners.model.Annotatable loaded from ant loader (parentFirst)
+Class org.junit.runners.model.TestClass loaded from ant loader (parentFirst)
+Finding class org.junit.runners.model.FrameworkMember
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/FrameworkMember.class
+Class org.junit.runners.model.FrameworkMember loaded from ant loader (parentFirst)
+Finding class org.junit.runners.model.FrameworkMethod
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/FrameworkMethod.class
+Class org.junit.runners.model.FrameworkMethod loaded from ant loader (parentFirst)
+Finding class org.junit.runners.model.FrameworkField
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/FrameworkField.class
+Class org.junit.runners.model.FrameworkField loaded from ant loader (parentFirst)
+Class java.lang.IllegalAccessException loaded from parent loader (parentFirst)
+Finding class org.junit.runners.model.TestClass$FieldComparator
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/TestClass$FieldComparator.class
+Class org.junit.runners.model.TestClass$FieldComparator loaded from ant loader (parentFirst)
+Finding class org.junit.runners.model.TestClass$MethodComparator
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/model/TestClass$MethodComparator.class
+Class org.junit.runners.model.TestClass$MethodComparator loaded from ant loader (parentFirst)
+Class java.util.LinkedHashMap loaded from parent loader (parentFirst)
+Finding class org.junit.internal.MethodSorter
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/MethodSorter.class
+Class org.junit.internal.MethodSorter loaded from ant loader (parentFirst)
+Finding class org.junit.internal.MethodSorter$1
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/MethodSorter$1.class
+Class org.junit.internal.MethodSorter$1 loaded from ant loader (parentFirst)
+Finding class org.junit.internal.MethodSorter$2
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/MethodSorter$2.class
+Class org.junit.internal.MethodSorter$2 loaded from ant loader (parentFirst)
+Finding class org.junit.FixMethodOrder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/FixMethodOrder.class
+Class org.junit.FixMethodOrder loaded from ant loader (parentFirst)
+Class java.lang.SecurityException loaded from parent loader (parentFirst)
+Class java.lang.NullPointerException loaded from parent loader (parentFirst)
+Class java.lang.reflect.Modifier loaded from parent loader (parentFirst)
+Finding class org.junit.jupiter.api.Test
+Finding class org.junit.jupiter.api.Test
+Finding class org.junit.jupiter.api.Test
+Finding class org.junit.jupiter.api.Test
+Finding class org.junit.jupiter.api.Test
+Finding class org.junit.jupiter.api.Test
+Finding class org.junit.jupiter.api.Test
+Finding class org.junit.jupiter.api.Test
+Finding class org.junit.jupiter.api.Test
+Finding class org.junit.Before
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/Before.class
+Class org.junit.Before loaded from ant loader (parentFirst)
+Finding class org.junit.BeforeClass
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/BeforeClass.class
+Class org.junit.BeforeClass loaded from ant loader (parentFirst)
+Class java.util.Map$Entry loaded from parent loader (parentFirst)
+Finding class org.junit.runners.ParentRunner$1
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runners/ParentRunner$1.class
+Class org.junit.runners.ParentRunner$1 loaded from ant loader (parentFirst)
+Finding class org.junit.internal.Checks
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/Checks.class
+Class org.junit.internal.Checks loaded from ant loader (parentFirst)
+Finding class org.junit.AfterClass
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/AfterClass.class
+Class org.junit.AfterClass loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.rules.RuleMemberValidator
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/rules/RuleMemberValidator.class
+Class org.junit.internal.runners.rules.RuleMemberValidator loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.rules.RuleMemberValidator$RuleValidator
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/rules/RuleMemberValidator$RuleValidator.class
+Class org.junit.internal.runners.rules.RuleMemberValidator$RuleValidator loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.rules.RuleMemberValidator$Builder
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/rules/RuleMemberValidator$Builder.class
+Class org.junit.internal.runners.rules.RuleMemberValidator$Builder loaded from ant loader (parentFirst)
+Finding class org.junit.ClassRule
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/ClassRule.class
+Class org.junit.ClassRule loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.rules.RuleMemberValidator$DeclaringClassMustBePublic
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/rules/RuleMemberValidator$DeclaringClassMustBePublic.class
+Class org.junit.internal.runners.rules.RuleMemberValidator$DeclaringClassMustBePublic loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeStatic
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/rules/RuleMemberValidator$MemberMustBeStatic.class
+Class org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeStatic loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBePublic
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/rules/RuleMemberValidator$MemberMustBePublic.class
+Class org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBePublic loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeATestRule
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/rules/RuleMemberValidator$FieldMustBeATestRule.class
+Class org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeATestRule loaded from ant loader (parentFirst)
+Finding class org.junit.Rule
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/Rule.class
+Class org.junit.Rule loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeNonStaticOrAlsoClassRule
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/rules/RuleMemberValidator$MemberMustBeNonStaticOrAlsoClassRule.class
+Class org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeNonStaticOrAlsoClassRule loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeARule
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/rules/RuleMemberValidator$FieldMustBeARule.class
+Class org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeARule loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeATestRule
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/rules/RuleMemberValidator$MethodMustBeATestRule.class
+Class org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeATestRule loaded from ant loader (parentFirst)
+Finding class org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeARule
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/internal/runners/rules/RuleMemberValidator$MethodMustBeARule.class
+Class org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeARule loaded from ant loader (parentFirst)
+Class java.util.LinkedHashSet loaded from parent loader (parentFirst)
+Finding class org.junit.validator.ValidateWith
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/validator/ValidateWith.class
+Class org.junit.validator.ValidateWith loaded from ant loader (parentFirst)
+Class java.lang.StringBuilder loaded from parent loader (parentFirst)
+Finding class org.junit.After
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/After.class
+Class org.junit.After loaded from ant loader (parentFirst)
+Finding class org.junit.Test
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/Test.class
+Class org.junit.Test loaded from ant loader (parentFirst)
+Class java.lang.reflect.InvocationTargetException loaded from parent loader (parentFirst)
+Finding class org.junit.runner.Description
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/Description.class
+Class java.io.Serializable loaded from parent loader (parentFirst)
+Class org.junit.runner.Description loaded from ant loader (parentFirst)
+Class java.util.regex.Pattern loaded from parent loader (parentFirst)
+Class java.util.concurrent.ConcurrentLinkedQueue loaded from parent loader (parentFirst)
+Finding class org.junit.runner.OrderWith
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/OrderWith.class
+Class org.junit.runner.OrderWith loaded from ant loader (parentFirst)
+Class java.lang.System loaded from parent loader (parentFirst)
+    [junit] Running blackjack.modele.EtatPartieTest
+Finding class org.junit.runner.notification.SynchronizedRunListener
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/notification/SynchronizedRunListener.class
+Class org.junit.runner.notification.SynchronizedRunListener loaded from ant loader (parentFirst)
+Class java.util.concurrent.CopyOnWriteArrayList loaded from parent loader (parentFirst)
+Finding class org.junit.runner.notification.RunListener$ThreadSafe
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/notification/RunListener$ThreadSafe.class
+Class org.junit.runner.notification.RunListener$ThreadSafe loaded from ant loader (parentFirst)
+Finding class org.junit.runner.notification.RunNotifier$5
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/notification/RunNotifier$5.class
+Finding class org.junit.runner.notification.RunNotifier$SafeNotifier
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/notification/RunNotifier$SafeNotifier.class
+Class org.junit.runner.notification.RunNotifier$SafeNotifier loaded from ant loader (parentFirst)
+Class org.junit.runner.notification.RunNotifier$5 loaded from ant loader (parentFirst)
+Finding class junit.framework.JUnit4TestCaseFacade
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/JUnit4TestCaseFacade.class
+Class junit.framework.JUnit4TestCaseFacade loaded from ant loader (parentFirst)
+Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitVersionHelper
+Loaded from /usr/share/ant/lib/ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitVersionHelper.class
+Class java.lang.ReflectiveOperationException loaded from parent loader (parentFirst)
+Finding class junit.framework.ComparisonFailure
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/ComparisonFailure.class
+Class junit.framework.ComparisonFailure loaded from ant loader (parentFirst)
+Finding class org.junit.runner.notification.Failure
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/notification/Failure.class
+Class org.junit.runner.notification.Failure loaded from ant loader (parentFirst)
+Finding class org.junit.runner.notification.RunNotifier$6
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/notification/RunNotifier$6.class
+Class org.junit.runner.notification.RunNotifier$6 loaded from ant loader (parentFirst)
+Finding class junit.framework.TestFailure
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar junit/framework/TestFailure.class
+Class junit.framework.TestFailure loaded from ant loader (parentFirst)
+Finding class org.junit.runner.notification.RunNotifier$9
+Loaded from /run/media/asim/Muhammad Asim/Unicaen/L3/Projet/asim_tatah_khelalfa_hadj-benabdelmoula/livraison/lib/junit-4.13.jar org/junit/runner/notification/RunNotifier$9.class
+Class org.junit.runner.notification.RunNotifier$9 loaded from ant loader (parentFirst)
+Class java.util.Enumeration loaded from parent loader (parentFirst)
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.004 sec
+Class org.apache.tools.ant.util.FileUtils loaded from parent loader (parentFirst)

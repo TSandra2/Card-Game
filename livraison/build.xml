@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Blackjack" default="compile" basedir=".">
+    
+    <!-- ========== PROPRIÉTÉS ========== -->
+    <property name="src.dir" location="src"/>
+    <property name="build.dir" location="build"/>
+    <property name="dist.dir" location="dist"/>
+    <property name="docs.dir" location="docs"/>
+    <property name="lib.dir" location="lib"/>
+    <property name="test.dir" location="test"/>
+    
+    <!-- Classes principales -->
+    <property name="main.console.class" value="main.MainConsole"/>
+    <property name="main.gui.class" value="main.Main"/>
+    
+    <!-- Noms des JAR -->
+    <property name="jar.main.name" value="blackjack-game.jar"/>
+    <property name="jar.cartes.name" value="librairie-cartes.jar"/>
+    
+    <!-- ========== INITIALISATION ========== -->
+    <target name="init">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+        <mkdir dir="${lib.dir}"/>
+    </target>
+    
+    <!-- ========== COMPILATION PRINCIPALE ========== -->
+    <target name="compile" depends="init" description="Compile tous les fichiers source">
+        <echo message=" Compilation de tous les fichiers source..."/>
+        <javac srcdir="${src.dir}" 
+               destdir="${build.dir}" 
+               includeantruntime="false"
+               debug="true"
+               debuglevel="lines,vars,source">
+            <compilerarg value="-Xlint:unchecked"/>
+        </javac>
+        <echo message=" Compilation réussie !"/>
+    </target>
+    
+    <!-- ========== JAR PRINCIPAL ========== -->
+    <target name="jar" depends="compile" description="Crée le JAR exécutable principal">
+        <echo message=" Création du JAR principal..."/>
+        <jar destfile="${dist.dir}/${jar.main.name}" basedir="${build.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main.class}"/>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${src.dir}" includes="assets/**/*.png"/>
+        </jar>
+        <echo message=" JAR principal créé: ${dist.dir}/${jar.main.name}"/>
+    </target>
+    
+    <!-- ========== JAR LIBRAIRIE CARTES ========== -->
+    <target name="jar-cartes" depends="compile" description="Crée le JAR de la librairie cartes">
+        <echo message=" Création de la librairie cartes..."/>
+        <jar destfile="${lib.dir}/${jar.cartes.name}" basedir="${build.dir}">
+            <include name="cartes/**/*.class"/>
+            <include name="cartes/vue/**/*.class"/>
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+            </manifest>
+        </jar>
+        <echo message="Librairie cartes créée: ${lib.dir}/${jar.cartes.name}"/>
+    </target>
+    
+    <!-- ========== EXÉCUTION CONSOLE ========== -->
+    <target name="runConsole" depends="compile" description="Lance la version console">
+        <echo message="🎮 Lancement version console..."/>
+        <java classname="${main.console.class}" fork="true" classpath="${build.dir}">
+            <arg value="-console"/>
+        </java>
+    </target>
+    
+    <!-- ========== EXÉCUTION GRAPHIQUE ========== -->
+    <target name="runGUI" depends="compile" description="Lance la version graphique">
+        <echo message=" Lancement version graphique..."/>
+        <java classname="${main.gui.class}" fork="true" classpath="${build.dir}">
+             <classpath>
+            <pathelement location="${build.dir}"/>
+            <pathelement location="${src.dir}"/> 
+        </classpath>
+            <sysproperty key="java.awt.headless" value="false"/>
+        </java>
+    </target>
+    
+    <!-- ========== COMPILATION TESTS ========== -->
+    <target name="test-compile" depends="compile" description="Compile les tests">
+        <echo message=" Compilation des tests..."/>
+        <mkdir dir="${build.dir}/test-classes"/>
+        <javac srcdir="${test.dir}" 
+               destdir="${build.dir}/test-classes" 
+               includeantruntime="false"
+               classpath="${build.dir}">
+            <classpath>
+                <pathelement location="${build.dir}"/>
+
+                <!-- Add ALL JUnit jars -->
+                <fileset dir="${lib.dir}" includes="**/*.jar"/>
+            </classpath>
+            <compilerarg value="-Xlint:unchecked"/>
+        </javac>
+        <echo message=" Tests compilés !"/>
+    </target>
+    
+    <!-- ========== EXÉCUTION TESTS ========== -->
+    <target name="test" depends="test-compile" description="Exécute les tests">
+        <echo message=" Exécution des tests..."/>
+        <junit printsummary="yes" haltonfailure="yes">
+            <classpath>
+                <pathelement location="${build.dir}"/>
+                <pathelement location="${build.dir}/test-classes"/>
+                <fileset dir="${lib.dir}" includes="**/*.jar"/>
+            </classpath>
+
+            <batchtest>
+                <fileset dir="${test.dir}">
+                    <include name="**/*Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+
+        <echo message=" Tous les tests passent !"/>
+    </target>
+    
+    <!-- ========== DOCUMENTATION ========== -->
+    <target name="doc" depends="init" description="Génère la documentation JavaDoc">
+        <echo message=" Génération de la documentation..."/>
+        <mkdir dir="${docs.dir}"/>
+        <javadoc destdir="${docs.dir}" 
+                 sourcepath="${src.dir}"
+                 packagenames="cartes.*, cartes.vue.*, blackjack.*, main, observer"
+                 windowtitle="Blackjack Documentation"
+                 doctitle="&lt;h1&gt; Blackjack Game&lt;/h1&gt;"
+                 bottom="Copyright © 2024">
+            <link href="https://docs.oracle.com/javase/8/docs/api/"/>
+        </javadoc>
+        <echo message=" Documentation générée: ${docs.dir}/index.html"/>
+    </target>
+    
+    <!-- ========== CRÉATION DISTRIBUTION ========== -->
+    <target name="dist" depends="jar, jar-cartes, doc" description="Crée la distribution complète">
+        <echo message=" Création de la distribution..."/>
+        <zip destfile="${dist.dir}/blackjack-complet.zip">
+            <zipfileset dir="." includes="README.md,build.xml"/>
+            <zipfileset dir="${src.dir}" prefix="src"/>
+            <zipfileset dir="${dist.dir}" includes="*.jar" prefix="dist"/>
+            <zipfileset dir="${lib.dir}" includes="*.jar" prefix="lib"/>
+            <zipfileset dir="${docs.dir}" prefix="docs"/>
+        </zip>
+        <echo message=" Distribution créée: ${dist.dir}/blackjack-complet.zip"/>
+    </target>
+    
+    <!-- ========== NETTOYAGE ========== -->
+    <target name="clean" description="Nettoie tous les fichiers générés">
+        <echo message=" Nettoyage..."/>
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+        <delete dir="${docs.dir}"/>
+        <echo message=" Nettoyage terminé"/>
+    </target>
+    
+    <!-- ========== AFFICHAGE AIDE ========== -->
+    <target name="help" description="Affiche l'aide">
+        <echo message=" TARGETS DISPONIBLES:"/>
+        <echo message="  compile     - Compile tous les fichiers source"/>
+        <echo message="  jar         - Crée le JAR exécutable principal"/>
+        <echo message="  jar-cartes  - Crée la librairie cartes séparée"/>
+        <echo message="  runConsole  - Lance MainConsole (version console)"/>
+        <echo message="  runGUI      - Lance Main (version graphique)"/>
+        <echo message="  test        - Compile et exécute les tests"/>
+        <echo message="  doc         - Génère la documentation JavaDoc"/>
+        <echo message="  dist        - Crée la distribution complète"/>
+        <echo message="  clean       - Nettoie les fichiers générés"/>
+        <echo message="  help        - Affiche cette aide"/>
+    </target>
+
+</project>

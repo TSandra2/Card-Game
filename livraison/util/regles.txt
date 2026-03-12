@@ -1,0 +1,91 @@
+RÈGLES DU BLACKJACK
+===================
+
+OBJECTIF
+--------
+Avoir une main plus proche de 21 que le croupier SANS dépasser 21.
+
+VALEURS DES CARTES
+------------------
+- As (A) = 1 ou 11 points
+- Figures (Roi, Dame, Valet) = 10 points  
+- Cartes 2-10 = valeur faciale
+
+DÉROULEMENT D'UNE PARTIE
+------------------------
+1. MISES : Chaque joueur place sa mise
+2. DISTRIBUTION :
+   - Joueurs : 2 cartes faces visibles
+   - Croupier : 1 carte visible + 1 carte cachée
+3. TOUR DES JOUEURS : Chaque joueur choisit
+4. TOUR DU CROUPIER : Croupier joue automatiquement
+5. RÉSULTATS : Calcul des gains
+
+ACTIONS POSSIBLES
+-----------------
+TIRER   : Prendre une carte supplémentaire
+RESTER  : Garder sa main actuelle  
+DOUBLER : Doubler la mise + 1 carte (seulement sur 2 premières cartes)
+SPLIT   : Séparer une paire en 2 mains (cartes identiques)
+ASSURER : Parier que le croupier a Blackjack (si As visible)
+
+RÈGLES DU CROUPIER
+------------------
+- Tire jusqu'à 16 points
+- Reste à 17 points ou plus
+- Soft 17 (As+6) : TIRE toujours
+
+CAS SPÉCIAUX
+------------
+BLACKJACK : As + carte à 10 points = gain 3:2 (mise × 1.5)
+BUSTE     : main.Main > 21 = défaite immédiate
+ÉGALITÉ   : Même score = retour de la mise
+
+TABLEAU DES GAINS
+-----------------
+Victoire normale : Mise × 2
+Blackjack        : Mise × 2.5  
+Égalité          : Mise × 1
+Défaite/Buste    : 0
+
+STRATÉGIE DE BASE
+-----------------
+TIRER si :
+- main.Main ≤ 11 points
+- main.Main 12-16 ET croupier a 7-As
+- Soft 17 ou moins
+
+RESTER si :
+- main.Main ≥ 17 points
+- main.Main 12-16 ET croupier a 2-6
+
+DOUBLER si :
+- main.Main 9-11 points ET croupier faible (2-6)
+
+SPLITTER si :
+- As-As, 8-8 : TOUJOURS
+- 9-9 : Sauf contre 7,10,As
+
+VERSION PROJET
+--------------
+MINIMALE (requise) :
+✓ TIRER/RESTER
+✓ Calcul valeurs
+✓ Détection Blackjack/Buste  
+✓ Jeu auto croupier
+
+AVANCÉE (bonus) :
+⭐ DOUBLER/SPLIT/ASSURER
+⭐ Interface graphique
+⭐ Stratégies IA
+
+EXEMPLE DE PARTIE
+-----------------
+Joueur : 8♣ + 9♦ = 17 points → RESTE
+Croupier : A♠ + K♥ = 21 → BLACKJACK!
+Résultat : Croupier gagne
+
+Joueur : A♥ + J♠ = BLACKJACK!
+Résultat : Joueur gagne 1.5 × mise
+
+--- FIN DES RÈGLES ---

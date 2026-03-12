@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/asim_tatah_khelalfa_hadj-benabdelmoula.iml" filepath="$PROJECT_DIR$/.idea/asim_tatah_khelalfa_hadj-benabdelmoula.iml" />
+      <module fileurl="file://$PROJECT_DIR$/livraison/src/livraison.iml" filepath="$PROJECT_DIR$/livraison/src/livraison.iml" />
+      <module fileurl="file://$PROJECT_DIR$/livraison/livraison2.iml" filepath="$PROJECT_DIR$/livraison/livraison2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/livraison/out/out.iml" filepath="$PROJECT_DIR$/livraison/out/out.iml" />
+    </modules>
+  </component>
+</project>
